@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rian Rocha Arquitetura — Projetos residenciais e design de interiores em Mogi das Cruzes, SP.">
+  <title>Rian Rocha Arquitetura</title>
+  <!-- Fontes Google (exceção CDN permitida) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       CABEÇALHO / NAVEGAÇÃO
+       ==================================================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+
+      <a href="#top" class="nav__logo">
+        <img src="assets/images/logo.png" alt="Rian Rocha Arquitetura" height="50">
+      </a>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#sobre"      class="nav__link nav__link--ul">SOBRE</a>
+        <a href="#portfolio"  class="nav__link nav__link--ul">PORTFÓLIO</a>
+        <a href="#processo"   class="nav__link nav__link--ul">INTERIORES</a>
+        <a href="#servicos"   class="nav__link nav__link--ul">SERVIÇOS</a>
+        <a href="#contato"    class="nav__link nav__link--copper">CONTATO</a>
+        <a href="https://www.instagram.com/arq.rianrocha/" target="_blank" rel="noopener"
+           class="nav__instagram" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+      <div class="nav__actions">
+        <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+           target="_blank" rel="noopener"
+           class="btn btn--dark nav__cta">FALE COMIGO</a>
+        <button class="nav__hamburger" id="hamburger-btn"
+                aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar nav__bar--short"></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ====================================================
+       MENU MOBILE (OVERLAY)
+       ==================================================== -->
+  <div class="mobile-menu" id="mobile-menu"
+       aria-hidden="true" role="dialog" aria-label="Menu de navegação">
+
+    <div class="mobile-menu__head">
+      <span class="mobile-menu__brand">RIAN ROCHA</span>
+      <button class="mobile-menu__close" id="menu-close-btn" aria-label="Fechar menu">×</button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Menu mobile">
+      <a href="#sobre"       class="mobile-menu__link">Sobre</a>
+      <a href="#portfolio"   class="mobile-menu__link">Portfólio</a>
+      <a href="#processo"    class="mobile-menu__link">Interiores</a>
+      <a href="#servicos"    class="mobile-menu__link">Serviços</a>
+      <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
+      <a href="#contato"     class="mobile-menu__link mobile-menu__link--copper">Contato</a>
+    </nav>
+
+    <div class="mobile-menu__foot">
+      <a href="https://www.instagram.com/arq.rianrocha/"
+         target="_blank" rel="noopener" class="mobile-menu__social">INSTAGRAM</a>
+      <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+         target="_blank" rel="noopener" class="mobile-menu__social">WHATSAPP</a>
+      <span>MOGI DAS CRUZES · SP</span>
+    </div>
+
+  </div>
+
+  <main>
+
+    <!-- ====================================================
+         HERO
+         ==================================================== -->
+    <section class="hero" id="top" aria-label="Início">
+      <div class="hero__grid">
+
+        <!-- Coluna esquerda — linha 1 -->
+        <div class="hero__top">
+          <div class="hero__divider" aria-hidden="true"></div>
+          <p class="hero__eyebrow">ARQUITETURA &nbsp;·&nbsp; INTERIORES &nbsp;·</p>
+          <h1 class="hero__title">
+            Transformando<br>
+            <em class="hero__title-em">espaços em arte.</em>
+          </h1>
+        </div>
+
+        <!-- Coluna direita — foto (ocupa linhas 1 e 2) -->
+        <div class="hero__photo" aria-hidden="true">
+          <img src="assets/images/hero-bg.png" alt="" class="hero__photo-img">
+          <div class="hero__photo-overlay"></div>
+        </div>
+
+        <!-- Coluna esquerda — linha 2 -->
+        <div class="hero__bottom">
+          <div class="hero__divider" aria-hidden="true"></div>
+          <p class="hero__desc">
+            Cada projeto é pensado para traduzir personalidade, unindo estética,
+            funcionalidade e atenção aos detalhes para construir o melhor ambiente para você.
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--dark">VER PORTFÓLIO</a>
+            <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+               target="_blank" rel="noopener" class="hero__link-arrow">
+              FALE COMIGO <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SOBRE
+         ==================================================== -->
+    <section class="sobre" id="sobre" aria-label="Sobre Rian Rocha">
+      <div class="container sobre__inner">
+
+        <div class="sobre__content reveal">
+          <p class="eyebrow">SOBRE MIM</p>
+          <h2 class="sec-title">
+            Penso o espaço<br>
+            <em class="sec-title-em">a partir de quem o habita.</em>
+          </h2>
+          <p class="sobre__text">
+            Para mim, arquitetura não começa na planta — começa na escuta.
+            Em entender a rotina, os afetos e a maneira singular como cada pessoa
+            ocupa e sente o espaço.
+          </p>
+          <p class="sobre__text sobre__text--last">
+            Acredito que um bom projeto organiza a luz, o silêncio e o movimento
+            para que o ambiente trabalhe a favor de quem vive nele. Funcionalidade,
+            estética e identidade não competem: se completam. É desse equilíbrio que
+            nasce um espaço atemporal — e profundamente seu.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">◇</span>
+              <div>
+                <p class="stat__num">+20</p>
+                <p class="stat__lbl">PROJETOS<br>CONCLUÍDOS</p>
+              </div>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">◇</span>
+              <div>
+                <p class="stat__num">+4</p>
+                <p class="stat__lbl">ANOS DE<br>EXPERIÊNCIA</p>
+              </div>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">◇</span>
+              <div>
+                <p class="stat__num">100%</p>
+                <p class="stat__lbl">CLIENTES<br>SATISFEITOS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre__photo-wrap reveal">
+          <img src="assets/images/sobremim.jpg" alt="Rian Rocha, arquiteta" class="sobre__photo">
+          <blockquote class="sobre__quote">
+            <span class="sobre__quote-mark" aria-hidden="true">"</span>
+            <p class="sobre__quote-text">
+              Arquitetura é sobre gente. Sobre viver e se sentir bem no seu espaço.
+            </p>
+            <div class="sobre__quote-line" aria-hidden="true"></div>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         PORTFÓLIO
+         ==================================================== -->
+    <section class="portfolio" id="portfolio" aria-label="Portfólio">
+      <div class="container">
+
+        <div class="portfolio__header reveal">
+          <div>
+            <p class="eyebrow eyebrow--light">PORTFÓLIO</p>
+            <h2 class="sec-title sec-title--light">
+              Projetos que <em class="sec-title-em sec-title-em--green">falam por si.</em>
+            </h2>
+          </div>
+          <button class="portfolio__toggle" id="portfolio-toggle"
+                  aria-expanded="false" aria-controls="portfolio-extra">
+            <span id="portfolio-label">VER TODOS OS PROJETOS</span>
+            <span class="portfolio__arrow" id="portfolio-arrow" aria-hidden="true">↓</span>
+          </button>
+        </div>
+
+        <!-- Grade: 2 colunas (1 grande + 1 normal) -->
+        <div class="port-grid reveal">
+          <figure class="port-item port-item--lg">
+            <img src="assets/images/portfolio-1.png"
+                 alt="Residência Jardim — projeto residencial"
+                 class="port-img" loading="lazy">
+            <figcaption class="port-caption">
+              <p class="port-cat">RESIDENCIAL</p>
+              <p class="port-name">Residência Jardim</p>
+            </figcaption>
+          </figure>
+          <figure class="port-item">
+            <img src="assets/images/portfolio-2.png"
+                 alt="Cobertura Aurora — projeto residencial"
+                 class="port-img" loading="lazy">
+            <figcaption class="port-caption">
+              <p class="port-cat">RESIDENCIAL</p>
+              <p class="port-name">Cobertura Aurora</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Grade: 3 colunas -->
+        <div class="port-grid port-grid--3 reveal">
+          <figure class="port-item port-item--sm">
+            <img src="assets/images/portfolio-3.png"
+                 alt="Suíte do Casal — interiores"
+                 class="port-img" loading="lazy">
+            <figcaption class="port-caption">
+              <p class="port-cat">INTERIORES</p>
+              <p class="port-name">Suíte do Casal</p>
+            </figcaption>
+          </figure>
+          <figure class="port-item port-item--sm">
+            <img src="assets/images/portfolio-4.png"
+                 alt="Quarto Infantil — interiores"
+                 class="port-img" loading="lazy">
+            <figcaption class="port-caption">
+              <p class="port-cat">INTERIORES</p>
+              <p class="port-name">Quarto Infantil</p>
+            </figcaption>
+          </figure>
+          <figure class="port-item port-item--sm">
+            <img src="assets/images/portfolio-5.png"
+                 alt="Quarto do Bebê — interiores"
+                 class="port-img" loading="lazy">
+            <figcaption class="port-caption">
+              <p class="port-cat">INTERIORES</p>
+              <p class="port-name">Quarto do Bebê</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Grade extra (colapsável) -->
+        <div class="portfolio__extra" id="portfolio-extra" aria-hidden="true">
+          <div class="port-grid port-grid--3">
+            <figure class="port-item port-item--sm">
+              <img src="assets/images/portfolio-2.png"
+                   alt="Living Integrado — interiores"
+                   class="port-img" loading="lazy">
+              <figcaption class="port-caption">
+                <p class="port-cat">INTERIORES</p>
+                <p class="port-name">Living Integrado</p>
+              </figcaption>
+            </figure>
+            <figure class="port-item port-item--sm">
+              <img src="assets/images/portfolio-1.png"
+                   alt="Área de Lazer — residencial"
+                   class="port-img" loading="lazy">
+              <figcaption class="port-caption">
+                <p class="port-cat">RESIDENCIAL</p>
+                <p class="port-name">Área de Lazer</p>
+              </figcaption>
+            </figure>
+            <figure class="port-item port-item--sm">
+              <img src="assets/images/portfolio-3.png"
+                   alt="Cozinha Gourmet — interiores"
+                   class="port-img" loading="lazy">
+              <figcaption class="port-caption">
+                <p class="port-cat">INTERIORES</p>
+                <p class="port-name">Cozinha Gourmet</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SERVIÇOS
+         ==================================================== -->
+    <section class="servicos" id="servicos" aria-label="Serviços">
+      <div class="container">
+
+        <div class="servicos__header reveal">
+          <p class="eyebrow">SERVIÇOS</p>
+          <h2 class="sec-title">Como posso <em class="sec-title-em">te ajudar</em></h2>
+        </div>
+
+        <div class="servicos__grid">
+
+          <article class="svc-card reveal">
+            <svg class="svc-card__icon" width="40" height="40" viewBox="0 0 40 40"
+                 fill="none" stroke="#6F7957" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 19 L20 7 L34 19"></path>
+              <path d="M9 17 V33 H31 V17"></path>
+              <path d="M17 33 V24 H23 V33"></path>
+            </svg>
+            <h3 class="svc-card__title">Projetos Residenciais</h3>
+            <p class="svc-card__desc">
+              Casas e apartamentos projetados com exclusividade, refletindo
+              a personalidade e o estilo de vida de cada cliente.
+            </p>
+            <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+               target="_blank" rel="noopener" class="svc-card__link">
+              SAIBA MAIS <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="svc-card svc-card--dark reveal">
+            <svg class="svc-card__icon" width="40" height="40" viewBox="0 0 40 40"
+                 fill="none" stroke="#9BA78F" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M10 34 V10 H24 V34"></path>
+              <path d="M24 34 V18 H32 V34"></path>
+              <path d="M6 34 H36"></path>
+              <path d="M14 15 H20 M14 21 H20 M14 27 H20"></path>
+            </svg>
+            <h3 class="svc-card__title">Projetos Comerciais</h3>
+            <p class="svc-card__desc">
+              Escritórios, lojas e espaços corporativos desenvolvidos para
+              transmitir a essência e o propósito da marca.
+            </p>
+            <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+               target="_blank" rel="noopener" class="svc-card__link svc-card__link--light">
+              SAIBA MAIS <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="svc-card reveal">
+            <svg class="svc-card__icon" width="40" height="40" viewBox="0 0 40 40"
+                 fill="none" stroke="#6F7957" stroke-width="1.3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 20 V16 a4 4 0 0 1 4-4 H27 a4 4 0 0 1 4 4 V20"></path>
+              <path d="M6 20 a3 3 0 0 1 3 3 V28 H31 V23 a3 3 0 0 1 3-3 a3 3 0 0 1 0 6 V31 H6 V26 a3 3 0 0 1 0-6Z"></path>
+              <path d="M10 31 V34 M30 31 V34"></path>
+            </svg>
+            <h3 class="svc-card__title">Design de Interiores</h3>
+            <p class="svc-card__desc">
+              Ambientes sofisticados com seleção criteriosa de materiais,
+              mobiliário e iluminação, personalizados ao seu estilo.
+            </p>
+            <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+               target="_blank" rel="noopener" class="svc-card__link">
+              SAIBA MAIS <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         COMO TRABALHAMOS (PROCESSO)
+         ==================================================== -->
+    <section class="processo" id="processo" aria-label="Como trabalhamos">
+      <div class="container">
+
+        <div class="processo__top reveal">
+          <div class="processo__intro">
+            <p class="eyebrow">COMO TRABALHAMOS</p>
+            <h2 class="sec-title">Um processo <em class="sec-title-em">claro e conduzido.</em></h2>
+            <p class="processo__sub">
+              Cada etapa é pensada para dar tranquilidade e previsibilidade ao
+              seu projeto — do primeiro encontro à entrega final.
+            </p>
+          </div>
+          <div class="tab-group" role="tablist" aria-label="Tipo de projeto">
+            <button class="tab-btn tab-btn--active" id="tab-interiores"
+                    role="tab" aria-selected="true" aria-controls="steps-grid"
+                    onclick="setFluxo('interiores')">INTERIORES</button>
+            <button class="tab-btn" id="tab-arquitetura"
+                    role="tab" aria-selected="false" aria-controls="steps-grid"
+                    onclick="setFluxo('arquitetura')">ARQUITETURA</button>
+          </div>
+        </div>
+
+        <!-- Etapas — preenchido via JS -->
+        <div class="steps" id="steps-grid" role="tabpanel" aria-live="polite"></div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         DEPOIMENTOS
+         ==================================================== -->
+    <section class="depoimentos" id="depoimentos" aria-label="Depoimentos">
+      <div class="container">
+
+        <div class="depoimentos__header reveal">
+          <p class="eyebrow">DEPOIMENTOS</p>
+          <h2 class="sec-title">
+            Histórias de quem <em class="sec-title-em">vive os espaços.</em>
+          </h2>
+        </div>
+
+        <!-- Cards — preenchidos via JS -->
+        <div class="depoimentos__grid reveal" id="testimonials-grid" aria-live="polite"></div>
+
+        <!-- Formulário de avaliação -->
+        <div class="review-form reveal" aria-label="Formulário de avaliação">
+          <h3 class="review-form__title">Deixe sua avaliação</h3>
+          <p class="review-form__desc">
+            Sua experiência ajuda outras pessoas a confiarem no nosso trabalho.
+          </p>
+
+          <div class="review-form__field">
+            <label class="review-form__label" for="form-name">NOME</label>
+            <input class="review-form__input" type="text" id="form-name"
+                   name="name" placeholder="Seu nome" autocomplete="name">
+          </div>
+
+          <div class="review-form__field">
+            <label class="review-form__label" for="form-comment">COMENTÁRIO</label>
+            <textarea class="review-form__textarea" id="form-comment"
+                      name="comment" placeholder="Conte como foi sua experiência"
+                      rows="3"></textarea>
+          </div>
+
+          <div class="review-form__field">
+            <p class="review-form__label" id="stars-label">AVALIAÇÃO</p>
+            <div class="stars" id="stars-row"
+                 role="group" aria-labelledby="stars-label"></div>
+          </div>
+
+          <div class="review-form__actions">
+            <button class="btn btn--dark" type="button"
+                    onclick="submitReview()">ENVIAR AVALIAÇÃO</button>
+            <span class="review-form__thanks" id="thanks-msg"
+                  aria-live="polite" hidden>Obrigado pela sua avaliação!</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CTA / CONTATO
+         ==================================================== -->
+    <section class="cta" id="contato" aria-label="Contato">
+      <div class="cta__overlay" aria-hidden="true"></div>
+      <div class="cta__content container reveal">
+        <p class="eyebrow eyebrow--copper">VAMOS COMEÇAR</p>
+        <h2 class="cta__title">
+          Seu próximo projeto<br>
+          <em class="cta__title-em">merece autoria.</em>
+        </h2>
+        <p class="cta__desc">
+          Conte sobre o espaço que você deseja transformar. A partir daí,
+          desenhamos juntos uma solução sob medida — exclusiva, atemporal
+          e fiel à sua forma de viver.
+        </p>
+        <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+           target="_blank" rel="noopener" class="btn btn--light cta__btn">
+          <svg width="22" height="22" viewBox="0 0 32 32"
+               fill="currentColor" aria-hidden="true">
+            <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7.7.7-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.3 9.8-9.5 9.8zm5.4-7.3c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"></path>
+          </svg>
+          FALE COM RIAN ROCHA
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       RODAPÉ
+       ==================================================== -->
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="Rian Rocha Arquitetura"
+             class="footer__logo" height="52">
+        <p class="footer__tagline">
+          Projetos que transformam espaços e inspiram vidas.
+        </p>
+      </div>
+
+      <address class="footer__address">
+        <p class="footer__label">ENDEREÇO</p>
+        <p class="footer__text">
+          R. Afonso Pena, 217 — Centro<br>
+          Mogi das Cruzes — SP<br>
+          08770-330
+        </p>
+      </address>
+
+      <div class="footer__contact">
+        <p class="footer__label">CONTATO</p>
+        <ul class="footer__links" role="list">
+          <li>
+            <a href="https://www.instagram.com/arq.rianrocha/"
+               target="_blank" rel="noopener" class="footer__link">
+              <span aria-hidden="true">›</span> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5511994586173?text=Ol%C3%A1%20Rian!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+               target="_blank" rel="noopener" class="footer__link">
+              <span aria-hidden="true">›</span> WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="container footer__bottom">
+      <p class="footer__copy">© 2026 Rian Rocha Arquitetura. Todos os direitos reservados.</p>
+      <p class="footer__made">MADE WITH PASSION</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
