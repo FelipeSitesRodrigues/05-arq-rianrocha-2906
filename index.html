@@ -26,7 +26,7 @@
       <div class="nav__links" id="nav-links">
         <a href="#sobre"      class="nav__link nav__link--ul">SOBRE</a>
         <a href="#portfolio"  class="nav__link nav__link--ul">PORTFÓLIO</a>
-        <a href="#processo"   class="nav__link nav__link--ul">INTERIORES</a>
+        <a href="#processo"   class="nav__link nav__link--ul">PROCESSOS</a>
         <a href="#servicos"   class="nav__link nav__link--ul">SERVIÇOS</a>
         <a href="#contato"    class="nav__link nav__link--copper">CONTATO</a>
         <a href="https://www.instagram.com/arq.rianrocha/" target="_blank" rel="noopener"
@@ -70,7 +70,7 @@
     <nav class="mobile-menu__nav" aria-label="Menu mobile">
       <a href="#sobre"       class="mobile-menu__link">Sobre</a>
       <a href="#portfolio"   class="mobile-menu__link">Portfólio</a>
-      <a href="#processo"    class="mobile-menu__link">Interiores</a>
+      <a href="#processo"    class="mobile-menu__link">Processos</a>
       <a href="#servicos"    class="mobile-menu__link">Serviços</a>
       <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
       <a href="#contato"     class="mobile-menu__link mobile-menu__link--copper">Contato</a>
@@ -205,16 +205,11 @@
               Projetos que <em class="sec-title-em sec-title-em--green">falam por si.</em>
             </h2>
           </div>
-          <button class="portfolio__toggle" id="portfolio-toggle"
-                  aria-expanded="false" aria-controls="portfolio-extra">
-            <span id="portfolio-label">VER TODOS OS PROJETOS</span>
-            <span class="portfolio__arrow" id="portfolio-arrow" aria-hidden="true">↓</span>
-          </button>
         </div>
 
         <!-- Grade: 2 colunas (1 grande + 1 normal) -->
         <div class="port-grid reveal">
-          <figure class="port-item port-item--lg">
+          <figure class="port-item port-item--lg" data-src="assets/images/portfolio-1.png" data-caption="Residência Jardim · RESIDENCIAL" tabindex="0" role="button" aria-label="Ver Residência Jardim em tela cheia">
             <img src="assets/images/portfolio-1.png"
                  alt="Residência Jardim — projeto residencial"
                  class="port-img" loading="lazy">
@@ -223,7 +218,7 @@
               <p class="port-name">Residência Jardim</p>
             </figcaption>
           </figure>
-          <figure class="port-item">
+          <figure class="port-item" data-src="assets/images/portfolio-2.png" data-caption="Cobertura Aurora · RESIDENCIAL" tabindex="0" role="button" aria-label="Ver Cobertura Aurora em tela cheia">
             <img src="assets/images/portfolio-2.png"
                  alt="Cobertura Aurora — projeto residencial"
                  class="port-img" loading="lazy">
@@ -236,7 +231,7 @@
 
         <!-- Grade: 3 colunas -->
         <div class="port-grid port-grid--3 reveal">
-          <figure class="port-item port-item--sm">
+          <figure class="port-item port-item--sm" data-src="assets/images/portfolio-3.png" data-caption="Suíte do Casal · INTERIORES" tabindex="0" role="button" aria-label="Ver Suíte do Casal em tela cheia">
             <img src="assets/images/portfolio-3.png"
                  alt="Suíte do Casal — interiores"
                  class="port-img" loading="lazy">
@@ -245,7 +240,7 @@
               <p class="port-name">Suíte do Casal</p>
             </figcaption>
           </figure>
-          <figure class="port-item port-item--sm">
+          <figure class="port-item port-item--sm" data-src="assets/images/portfolio-4.png" data-caption="Quarto Infantil · INTERIORES" tabindex="0" role="button" aria-label="Ver Quarto Infantil em tela cheia">
             <img src="assets/images/portfolio-4.png"
                  alt="Quarto Infantil — interiores"
                  class="port-img" loading="lazy">
@@ -254,7 +249,7 @@
               <p class="port-name">Quarto Infantil</p>
             </figcaption>
           </figure>
-          <figure class="port-item port-item--sm">
+          <figure class="port-item port-item--sm" data-src="assets/images/portfolio-5.png" data-caption="Quarto do Bebê · INTERIORES" tabindex="0" role="button" aria-label="Ver Quarto do Bebê em tela cheia">
             <img src="assets/images/portfolio-5.png"
                  alt="Quarto do Bebê — interiores"
                  class="port-img" loading="lazy">
@@ -268,7 +263,7 @@
         <!-- Grade extra (colapsável) -->
         <div class="portfolio__extra" id="portfolio-extra" aria-hidden="true">
           <div class="port-grid port-grid--3">
-            <figure class="port-item port-item--sm">
+            <figure class="port-item port-item--sm" data-src="assets/images/portfolio-2.png" data-caption="Living Integrado · INTERIORES" tabindex="0" role="button" aria-label="Ver Living Integrado em tela cheia">
               <img src="assets/images/portfolio-2.png"
                    alt="Living Integrado — interiores"
                    class="port-img" loading="lazy">
@@ -277,7 +272,7 @@
                 <p class="port-name">Living Integrado</p>
               </figcaption>
             </figure>
-            <figure class="port-item port-item--sm">
+            <figure class="port-item port-item--sm" data-src="assets/images/portfolio-1.png" data-caption="Área de Lazer · RESIDENCIAL" tabindex="0" role="button" aria-label="Ver Área de Lazer em tela cheia">
               <img src="assets/images/portfolio-1.png"
                    alt="Área de Lazer — residencial"
                    class="port-img" loading="lazy">
@@ -286,7 +281,7 @@
                 <p class="port-name">Área de Lazer</p>
               </figcaption>
             </figure>
-            <figure class="port-item port-item--sm">
+            <figure class="port-item port-item--sm" data-src="assets/images/portfolio-3.png" data-caption="Cozinha Gourmet · INTERIORES" tabindex="0" role="button" aria-label="Ver Cozinha Gourmet em tela cheia">
               <img src="assets/images/portfolio-3.png"
                    alt="Cozinha Gourmet — interiores"
                    class="port-img" loading="lazy">
@@ -298,8 +293,25 @@
           </div>
         </div>
 
+        <!-- Botão "Ver todos os projetos" centralizado -->
+        <div class="portfolio__see-all-wrap">
+          <button class="portfolio__see-all" id="portfolio-toggle"
+                  aria-expanded="false" aria-controls="portfolio-extra">
+            <span id="portfolio-label">VER TODOS OS PROJETOS</span>
+            <span class="portfolio__see-all-arrow" id="portfolio-arrow" aria-hidden="true">↓</span>
+          </button>
+        </div>
+
       </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"
+         aria-label="Visualizar projeto" aria-hidden="true">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Fechar">×</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
 
     <!-- ====================================================
          SERVIÇOS

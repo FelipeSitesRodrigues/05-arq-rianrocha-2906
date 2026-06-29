@@ -683,6 +683,100 @@ ul[role="list"] { list-style: none; }
 }
 .portfolio__extra .port-grid { margin-top: 16px; }
 
+/* Botão "Ver todos os projetos" centralizado */
+.portfolio__see-all-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(36px, 4vw, 56px);
+}
+
+.portfolio__see-all {
+  background: none;
+  border: 1px solid rgba(235,232,224,.36);
+  color: rgba(235,232,224,.85);
+  font-family: var(--ff-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 18px 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  transition: border-color 0.3s, color 0.3s;
+}
+.portfolio__see-all:hover {
+  border-color: rgba(235,232,224,.7);
+  color: var(--clr-bg);
+}
+
+.portfolio__see-all-arrow {
+  font-size: 16px;
+  color: var(--clr-copper-lt);
+  display: inline-block;
+  transition: transform 0.4s var(--ease-out);
+}
+.portfolio__see-all-arrow.is-open { transform: rotate(180deg); }
+
+/* Cursor nas figuras do portfólio */
+.port-item[data-src] { cursor: pointer; }
+.port-item[data-src]:focus-visible {
+  outline: 2px solid var(--clr-copper-lt);
+  outline-offset: 2px;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0,0,0,.92);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+}
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: 1px solid rgba(235,232,224,.3);
+  color: rgba(235,232,224,.9);
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+  z-index: 201;
+}
+.lightbox__close:hover {
+  border-color: rgba(235,232,224,.8);
+  color: #fff;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: calc(100vh - 100px);
+  object-fit: contain;
+  box-shadow: 0 40px 100px rgba(0,0,0,.6);
+}
+
+.lightbox__caption {
+  margin-top: 18px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(235,232,224,.55);
+  text-align: center;
+}
+
 
 /* ─── 10. SERVIÇOS ──────────────────────────────────────────── */
 .servicos {

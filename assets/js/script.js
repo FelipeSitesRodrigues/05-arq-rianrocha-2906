@@ -115,6 +115,75 @@ if (portfolioToggle) portfolioToggle.addEventListener('click', togglePortfolio);
 
 
 /* ============================================================
+   3b. LIGHTBOX — VISUALIZAR PROJETO EM TELA CHEIA
+   ============================================================ */
+var lightbox      = document.getElementById('lightbox');
+var lightboxImg   = document.getElementById('lightbox-img');
+var lightboxCap   = document.getElementById('lightbox-caption');
+var lightboxClose = document.getElementById('lightbox-close');
+
+/** Abre o lightbox com a imagem do item clicado. */
+function openLightbox(src, caption, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || '';
+  lightboxCap.textContent = caption || '';
+  lightbox.classList.add('is-open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  lightboxClose.focus();
+}
+
+/** Fecha o lightbox. */
+function closeLightbox() {
+  lightbox.classList.remove('is-open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightboxImg.src = '';
+  document.body.style.overflow = '';
+}
+
+/* Clique no botão fechar */
+if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+/* Clique no fundo do lightbox (fora da imagem) */
+if (lightbox) {
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+}
+
+/* Tecla Escape fecha o lightbox */
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && lightbox && lightbox.classList.contains('is-open')) {
+    closeLightbox();
+  }
+});
+
+/* Delegação de clique para todos os port-item com data-src */
+document.addEventListener('click', function (e) {
+  var item = e.target.closest('.port-item[data-src]');
+  if (!item) return;
+  var src     = item.getAttribute('data-src');
+  var caption = item.getAttribute('data-caption');
+  var img     = item.querySelector('.port-img');
+  var alt     = img ? img.alt : '';
+  openLightbox(src, caption, alt);
+});
+
+/* Suporte a teclado: Enter / Espaço nos itens clicáveis */
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  var item = e.target.closest('.port-item[data-src]');
+  if (!item) return;
+  e.preventDefault();
+  var src     = item.getAttribute('data-src');
+  var caption = item.getAttribute('data-caption');
+  var img     = item.querySelector('.port-img');
+  var alt     = img ? img.alt : '';
+  openLightbox(src, caption, alt);
+});
+
+
+/* ============================================================
    4. PROCESSO — ABAS (INTERIORES / ARQUITETURA)
    ============================================================ */
 
